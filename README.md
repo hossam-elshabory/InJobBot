@@ -40,7 +40,7 @@
 This bot automates job searching by scrapping Data and BI Jobs posted on LinkedIn from the previous week and posts it on a telegram channel.
 
 ## 🎥 Demo / Working <a name = "demo"></a>
-![Working](images\example.gif)
+![Working]()
 
 ## 💭 How it works <a name = "working"></a>
 
