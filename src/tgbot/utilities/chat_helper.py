@@ -5,8 +5,8 @@ msgs = {
         "Thanks for checking 😊",
     ],
     "help": [
-        "I search linkedin for *BI & Data Jobs or any jobs 💼* posted last week and send them in chat.\nI also have some tips for you, send me a /tips command to view them.",
-        "I can tell you what *BI & Data Jobs or any jobs 💼* posted on linkedin last week.\nWith some tips, send me a /tips command to view them.",
+        "I search linkedin for *Jobs💼* posted last week and send them in chat.\nI also have some tips for you, send me a /tips command to view them.",
+        "I can tell you what *Jobs 💼* posted on linkedin last week.\nYou can send me a /tips command to view some tips.",
     ],
     "source": [
         "You can checkout my source code on my developer GITHUB REPO. [HERE]()",
@@ -20,11 +20,11 @@ msgs = {
         "*You are an Admin | Owner. Here are your control commands.*\n\n"
         "• /check = _Check if bot is running_.\n"
         "• /ljobs = _Searches linkedin for jobs default is BI Data Analyst Egypt_.\n"
-        "• /ljobs job title location = _Searches linkedin for job tile in location_.\n"
+        "• /ljobs job title location = _Searches linkedin for job title in location_.\n"
         "• /echo = _Echos back what ever you send it_.\n"
         "• /addgroup group id = _Adds group to the allow list_.\n"
         "• /rmgroup group id = _Removes group from allow list_.\n"
-        "• /getgroup = _Returns back a list of all allowed group id in database_.\n"
+        "• /getgroup = _Returns back a list of all allowed group(s) id(s) in the database_.\n"
         "• /getgroup group id = _Returns back the group id if it exists in the database_."
     ),
 }
