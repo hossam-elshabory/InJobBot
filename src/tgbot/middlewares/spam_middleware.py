@@ -17,7 +17,7 @@ OWNER = config("OWNER")
 
 @dataclass(slots=True)
 class SpamMiddleware(BaseMiddleware):
-    """This Middleware handles users who spam commands."""
+    """_summary_ : This Middleware handles users who spam commands."""
 
     # Bot instance.
     bot: TeleBot
@@ -25,7 +25,7 @@ class SpamMiddleware(BaseMiddleware):
     limit: int
     # Chat update types to look for.
     update_types = ["message"]
-    # Dict[user_id: last date msg was sent].
+    # Dict["user_id": "last date msg was sent"].
     last_time: dict[str:str] = field(default_factory=dict)
     # List of users in the block list database.
     _blocked_users: list = field(default_factory=list)
@@ -59,7 +59,13 @@ class SpamMiddleware(BaseMiddleware):
         return msg.from_user.username != OWNER
 
     def set_last_time(self, msg: Message) -> None:
-        """This method sets user's message date to his id in last_time dict => dict['user_id': 'date of last message sent']."""
+        """_summary_ : This method sets user's message date to his id in last_time dict => dict['user_id': 'date of last message sent'].
+
+        Parameters
+        ----------
+        msg : Message
+            _description_ : TeleBot Message Object.
+        """
         # Setting the last message date for the user.
         self.last_time[msg.from_user.id] = msg.date
 
@@ -75,7 +81,13 @@ class SpamMiddleware(BaseMiddleware):
         return (msg.date - self.last_time[msg.from_user.id]) < self.limit
 
     def pre_process(self, msg: Message, data):
+        """_summary_ : This method handles update requests in chat.
 
+        Parameters
+        ----------
+        msg : Message
+            _description_ : TeleBot Message Object.
+        """
         # If the user is in the blocked users list from the database handler will skip.
         if str(msg.from_user.id) in self.get_blocked_users:
 
