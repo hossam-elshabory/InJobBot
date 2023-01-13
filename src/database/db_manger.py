@@ -61,9 +61,6 @@ class DatabaseManger:
         columns : dict[str, str]
             _description_ : A dict holding the columns names as a key and their types as the value
 
-        Example
-        -------
-            >>> DatabaseManger.create_table("table1", {name: CHAR, age: INT})
         """
         # Creating a list of column followed by their data types from the provided dict
         columns_with_types = [
