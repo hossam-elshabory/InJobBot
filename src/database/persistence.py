@@ -76,7 +76,7 @@ class UsersDatabase(IPersistenceLayer):
         user_id : str
             _description_ : user id.
         block_type : str
-            _description_ : 'perm' for permanently block | 'temp' fro temporary block
+            _description_ : 'perm' for permanently block | 'temp' for temporary block
         """
         # Getting the current date to be added as an attribute to the user record
         date = datetime.now().strftime("%Y/%m/%d, %H:%M:%S")
