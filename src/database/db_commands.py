@@ -39,7 +39,6 @@ class AddUserCommand(ICommand):
         """This method executes the 'INSERT INTO' statement."""
         # Calling the add_user method with the user's_id and his/her block type.
         persistence.add_user(self.user_id, self.block_type)
-        return True, None
 
 
 class GetUserCommand(ICommand):
