@@ -42,7 +42,7 @@ def jobs_post_inline_kb(job_link: str) -> InlineKeyboardMarkup:
 
     Parameters
     ----------
-    job_links : str
+    job_link : str
         _description_ : job link URL.
 
     Returns
