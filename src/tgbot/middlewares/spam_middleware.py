@@ -26,7 +26,7 @@ class SpamMiddleware(BaseMiddleware):
     # Chat update types to look for.
     update_types = ["message"]
     # Dict["user_id": "last date msg was sent"].
-    last_time: dict[str:str] = field(default_factory=dict)
+    last_time: dict[str, str] = field(default_factory=dict)
     # List of users in the block list database.
     _blocked_users: list = field(default_factory=list)
 
