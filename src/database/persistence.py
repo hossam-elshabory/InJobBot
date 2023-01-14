@@ -183,7 +183,7 @@ class UsersDatabase(IPersistenceLayer):
 
         Parameters
         ----------
-        user_id : str
+        group_id : str
             _description_ : group's id.
         """
         # Deleting the user record using his user_id as a filter criteria
