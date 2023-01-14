@@ -21,26 +21,7 @@ class TgPost(ABC):
 
 @dataclass(slots=True)
 class TgJobPost(TgPost):
-    """_summary_ : This data class creates posts from the scrapped data.
-
-    Methods
-    --------
-    create_posts()
-        _summary_ : This method loop over the jobs_data list and create a post for each job.
-
-        _parameters_
-        -------------
-        jobs_data : list[dict]
-            _description_ : This is the list of jobs data that will be used to create the posts.
-
-        _returns_
-        -------
-        list[dict]
-            _description_ : A list of dicts that contain 'job_details' and 'job_links' for each jobs.
-
-        _example_
-            >>> TgJobPost.create_posts(job_data)
-    """
+    """_summary_ : This data class creates posts from the scrapped data."""
 
     # This is the template that will be used to create the post.
     post_template: str = (
