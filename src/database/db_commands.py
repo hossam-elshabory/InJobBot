@@ -21,7 +21,7 @@ class AddUserCommand(ICommand):
     """The command adds a new user to the database using the INSERT INTO SQL statement."""
 
     def __init__(self, *, user_id: str, block_type: str) -> None:
-        """_summary_ : This method gets the data to initiates the command to add a user to the database.
+        """_summary_ : This method gets the data to initiate the command to add a user to the database.
 
         Parameters
         ----------
@@ -48,7 +48,7 @@ class GetUserCommand(ICommand):
     def __init__(
         self, *, user_id: str = None, block_type: str = None, order_by="date_added"
     ) -> None:
-        """_summary_ : This method gets the data to initiates the command to get user from database using user_id as a selection criteria and sort the results back using 'date_added' attribute (columns).
+        """_summary_ : This method gets the data to initiate the command to get user from database using user_id as a selection criteria and sort the results back using 'date_added' attribute (columns).
 
         Parameters
         ----------
@@ -77,7 +77,7 @@ class EditUserCommand(ICommand):
     """This command edits user's record in the database"""
 
     def __init__(self, *, user_id: str, block_type: str) -> None:
-        """_summary_ : This method gets the data to initiates the command to update user's block_type (perm | temp) records in the database.
+        """_summary_ : This method gets the data to initiate the command to update user's block_type (perm | temp) records in the database.
 
         Parameters
         ----------
@@ -101,7 +101,7 @@ class DeleteUserCommand(ICommand):
     """This command deletes user's record from the database."""
 
     def __init__(self, *, user_id: str) -> None:
-        """_summary_ : This method gets the data to initiates the command to delete user from database.
+        """_summary_ : This method gets the data to initiate the command to delete user from database.
 
         Parameters
         ----------
@@ -120,7 +120,7 @@ class AddGroupToAllowListCommand(ICommand):
     """This command adds a group to the allow_list"""
 
     def __init__(self, *, group_id: str) -> None:
-        """_summary_ : This method gets the data to initiates the command to add group to the bot's allow list.
+        """_summary_ : This method gets the data to initiate the command to add group to the bot's allow list.
 
         Parameters
         ----------
@@ -139,7 +139,7 @@ class GetGroupCommand(ICommand):
     """This command sends a 'SELECT' query to the allow_list database returning with group in it."""
 
     def __init__(self, *, group_id: str = None, order_by="date_added") -> None:
-        """_summary_ : This method gets the data to initiates the command to get user from database using group_id as a selection criteria and sort the results back using 'date_added' attribute (columns).
+        """_summary_ : This method gets the data to initiate the command to get user from database using group_id as a selection criteria and sort the results back using 'date_added' attribute (columns).
 
         Parameters
         ----------
@@ -163,7 +163,7 @@ class DeleteGroupCommand(ICommand):
     """This command deletes Groups from the database."""
 
     def __init__(self, *, group_id: str) -> None:
-        """_summary_ : This method gets the data to initiates the command to delete group from database.
+        """_summary_ : This method gets the data to initiate the command to delete group from database.
 
         Parameters
         ----------
