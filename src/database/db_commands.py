@@ -166,7 +166,7 @@ class DeleteGroupCommand(ICommand):
 
         Parameters
         ----------
-        user_id : str
+        group_id : str
             _description_ : Group's id.
         """
         self.group_id = group_id
