@@ -1,23 +1,29 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/FxL5qM0.jpg" alt="Bot logo"></a>
+ <img width=300px height=300px src="src\images\bot_logo.png" alt="Bot logo"></a>
 </p>
-
-<h3 align="center">InJobHunter</h3>
+ 
+<h3 align="center">InJobBot</h3>
 <div align="center">
 
-  [![Status](https://img.shields.io/badge/Status-Actice-brightgreen)]()
-  [![Python version](https://img.shields.io/badge/Python-v3.11-blue)](https://www.python.org/)
-  [![License](https://img.shields.io/badge/License-MIT-blue)]()
+  ![Status - Active](https://img.shields.io/badge/Status-Active-2ea44f?logo=Cachet&logoColor=green)
+  ![Maintained - Yes](https://img.shields.io/badge/Maintained-Yes-2ea44f)
+  ![Python - >=3.11](https://img.shields.io/badge/Python->=3.11-blue?logo=Python)
+  ![LICENSE - MIT](https://img.shields.io/badge/LICENSE-MIT-yellow)
 
+  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+  ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+  ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
 
-  [![BI & Data Jobs - Join Channel](https://img.shields.io/badge/BI_%26_Data_Jobs-Join_Channel-blue?style=for-the-badge&logo=Telegram)](https://t.me/bidajobs)
+  [![InJoBot - Join Telegram Channel](https://img.shields.io/badge/InJoBot-Join_Telegram_Channel-blue?style=for-the-badge&logo=telegram)](https://t.me/itsinjobbot)
 
 </div>
 
 ---
 
-<p align="center"> 🤖 Weekly Posted Jobs Scrapped From LinkedIn.
+# [📄 Official Documentation]() <!-- omit from toc -->
+
+<p align="center"> 🤖 Weekly Posted LinkedIn Jobs In Your Telegram. 🤖
     <br> 
 </p>
 
@@ -30,21 +36,23 @@
 - [🚀 Deploying your own bot ](#-deploying-your-own-bot-)
 - [⛏️ Built Using ](#️-built-using-)
 - [✍️ Authors ](#️-authors-)
+- [✅ Todo ](#-todo-)
 - [🎉 Acknowledgements ](#-acknowledgements-)
 
-
-
 ## 🧐 About <a name = "about"></a>
-This bot automates job searching by scrapping Jobs posted on LinkedIn from the previous week and sends it in a telegram channel on schedule or by demand using a command.
+InJobBot automates job searching by scrapping Jobs posted on LinkedIn from the previous week and sends it in a telegram channel on schedule or by demand using a command in chat.
 
 ## 🎥 Demo <a name = "demo"></a>
-![Working](images\example.gif)
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=500px height=500px src="src\images\example.gif" alt="Working"></a>
+</p>
 
 ## 💭 How the bot works <a name = "working"></a>
 
-The bot scrapes this LinkedIn and fetches jobs postings details eg. (Job Title, Company, Location, Job_link) and parses it then posts it on a telegram channel with inline buttons below the post for applying.
+The bot scrapes LinkedIn jobs page and fetches job postings details eg. (Job Title, Company, Location, Job_link) and parses it then sends it in chat with inline buttons below the post for applying.
 
-The bot uses the **requests** library to make the HTTP request to LinkedIn and **BeautifulSoup** to parse the returned request and extract the job posting details from it.
+The bot uses the **requests** library to make the HTTP request to LinkedIn and **BeautifulSoup** to parse the returned request content and extract the job posting details from it.
 
 The bot is written in Python 3.11, other dependencies are available in the requirements.txt
 
@@ -63,9 +71,9 @@ the BotFather, you can follow this Wiki to do so [How to Create A Telegram Bot W
 
 2. Create a *.env* file in the main directory and add your credentials : 
 
-Create a *.env* file and put the `BOT_TOKEN` you got from the BotFather, and the `CHANNEL_ID` to the channel the bot will post it (channel must be public and bot must be an admin), and the `OWNER` *(The Owner's Username)*, as the blow image demonstrate.
+Create a *.env* file and put the `BOT_TOKEN` you got from the BotFather, and the `CHANNEL_ID` to the channel the bot will post it (channel must be public and **<ins>bot must be an admin</ins>**), and the `OWNER` *(The Owner's Username)*, as the blow image demonstrate.
 
-![env example](images\env_file_example.png)
+![env example](src\images\env_file_example.png)
 
 <br>
 
@@ -74,7 +82,16 @@ Create a *.env* file and put the `BOT_TOKEN` you got from the BotFather, and the
 ```bash
 python bot.py
 ```
+<br>
 
+1. Type `/help` in chat to view available commands
+
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=500px height=500px src="src\images\help_command_owner.gif" alt="help command"></a>
+</p>
+
+> 🛑View the [documentations]() for more details about the bot's commands and how to add your own.
 ***
 
 ### Prerequisites
@@ -87,9 +104,12 @@ pip install -r requirements.txt
 ```
 
 ## 🚀 Deploying your own bot <a name = "deployment"></a>
-To see an example project on how to deploy your bot, please see my own configuration:
+You can deploy the bot after configuring it to any cloud hosting service, it's just like deploying a web app to the cloud.
 
-+ **Heroku**: https://github.com/kylelobo/Reddit-Bot#deploying_the_bot
+You can follow this tutorial to host your bot on [Pythonanywhere.](https://www.pythonanywhere.com)
+  - https://youtu.be/TOlNSunbfc8
+
+> ⚠ Make sure to install the dependencies on the cloud using `pip install -r requirements.txt` first before running the bot.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 + [pyTelegramBotAPI](https://pypi.org/project/pyTelegramBotAPI/) - Python Telegram API Wrapper.
@@ -100,6 +120,12 @@ To see an example project on how to deploy your bot, please see my own configura
 ## ✍️ Authors <a name = "authors"></a>
 + [@Hossam](https://github.com/hossam-elshabory) - Idea & Initial work.
 
+
+## ✅ Todo <a name = "TODO"></a>
+- [ ] Make the scrapper asynchronous using [httpx.](https://www.python-httpx.org)
+- [ ] Implement [AsyncTeleBot.](https://pytba.readthedocs.io/en/latest/async_version/index.html)
+- [ ] Improve the database tables's schema.
+- [ ] Improve the Group's allow list commands.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 + Database command pattern implementations.
