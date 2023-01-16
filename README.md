@@ -120,7 +120,6 @@ You can follow this tutorial to host your bot on [Pythonanywhere.](https://www.p
 ## ✍️ Authors <a name = "authors"></a>
 + [@Hossam](https://github.com/hossam-elshabory) - Idea & Initial work.
 
-
 ## ✅ Todo <a name = "TODO"></a>
 - [ ] Make the scrapper asynchronous using [httpx.](https://www.python-httpx.org)
 - [ ] Implement [AsyncTeleBot.](https://pytba.readthedocs.io/en/latest/async_version/index.html)
