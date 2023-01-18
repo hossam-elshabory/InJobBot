@@ -16,4 +16,6 @@ jobs:
           python-version: 3.11
       - run: pip install mkdocs-material 
       - run: pip install mkdocs-autolinks-plugin 
+      - run: pip install mkdocstrings
+      - run: pip install mkdocstrings[crystal,python]
       - run: mkdocs gh-deploy --force
