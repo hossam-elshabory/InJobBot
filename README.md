@@ -32,7 +32,6 @@
 - [💭 How the bot works ](#-how-the-bot-works-)
 - [🎈 Usage ](#-usage-)
   - [Quick Start Guide :](#quick-start-guide-)
-  - [Prerequisites](#prerequisites)
 - [🚀 Deploying your own bot ](#-deploying-your-own-bot-)
 - [⛏️ Built Using ](#️-built-using-)
 - [✍️ Authors ](#️-authors-)
@@ -77,14 +76,23 @@ Create a *.env* file and put the `BOT_TOKEN` you got from the BotFather, and the
 
 <br>
 
-3. Run the bot :
+3. Install prerequisites using the requirements.txt file.
+Navigate to the project directory and type the following command in the terminal :
+
+```bash
+pip install -r requirements.txt
+```
+
+<br>
+
+4. Run the bot :
 
 ```bash
 python bot.py
 ```
 <br>
 
-1. Type `/help` in chat to view available commands
+5. Type `/help` in chat to view available commands
 
 <p align="center">
   <a href="" rel="noopener">
@@ -93,15 +101,6 @@ python bot.py
 
 > 🛑View the [documentations]() for more details about the bot's commands and how to add your own.
 ***
-
-### Prerequisites
-
-You can install the project prerequisites using the requirements.txt file.
-Navigate to the project directory and type the following command in the terminal :
-
-```bash
-pip install -r requirements.txt
-```
 
 ## 🚀 Deploying your own bot <a name = "deployment"></a>
 You can deploy the bot after configuring it to any cloud hosting service, it's just like deploying a web app to the cloud.
