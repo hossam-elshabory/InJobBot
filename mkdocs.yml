@@ -1,0 +1,114 @@
+site_name: InJobBot
+repo_url: https://github.com/hossam-elshabory/InJobBot
+repo_name: hossam-elshabory/InJobBot
+
+nav:
+  - InJobBot: index.md
+  - Tutorial - User Guide:
+    - 01_Tutorial - User Guide/01_creating_bot_token.md
+    - 01_Tutorial - User Guide/02_cloning_repo.md
+    - 01_Tutorial - User Guide/03_configuring_bot.md
+    - 01_Tutorial - User Guide/04_running_bot.md
+  - Bot's Commands:
+    - 02_Bot_Commands/01_commands.md
+    - 02_Bot_Commands/02_job_command.md
+    - 02_Bot_Commands/03_allow_list_commands.md
+    - 02_Bot_Commands/04_help_and_tips_commands.md
+  - Bot Database Design:
+    - 03_Database_Design/01_database_design.md
+    
+    
+# Theme settings
+theme:
+  name: material
+  logo: assets/index/website_logo.png
+  favicon: assets/index/project_logo.png
+  custom_dir: docs/overrides
+  features:
+    - navigation.expand
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - header.autohide
+    - announce.dismiss
+  palette:
+    scheme: slate
+    primary: blue
+    accent: green
+  icon:
+    repo: fontawesome/brands/github
+
+# plugins
+plugins:
+  - search
+  - autolinks
+  - mkdocstrings:
+      custom_templates: templates
+      default_handler: python
+      handlers:
+        python:
+          options:
+            # heading settings
+            heading_level: 0
+            # docstring settings
+            docstring_section_style: "table"
+            docstring_style: "numpy"
+            # annotations settings
+            show_signature_annotations: True
+            # path and table of content settings
+            show_root_full_path: False
+            show_root_toc_entry: False      
+
+
+
+# CSS styling 
+extra_css:
+  - stylesheets/extra.css
+
+# Extra
+extra:
+  version:
+    provider: mike
+
+# Markdown extensions
+markdown_extensions:
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.critic
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+copyright: Copyright &copy; 2023 Hossam Elshabory.
+
