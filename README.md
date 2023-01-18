@@ -21,7 +21,7 @@
 
 ---
 
-# [📄 Official Documentation](https://hossam-elshabory.github.io/InJobBot/) <!-- omit from toc -->
+# [📄 Official Documentation](https://hossam-elshabory.github.io/InJobBot/0.1/) <!-- omit from toc -->
 
 <p align="center"> 🤖 Weekly Posted LinkedIn Jobs In Your Telegram. 🤖
     <br> 
@@ -64,7 +64,7 @@ The bot is written in Python 3.11, other dependencies are available in the requi
 1. Create a bot using BotFather :
 
 To use the bot, You first need to create a telegram bot using
-the BotFather, you can follow this Wiki to do so [How to Create A Telegram Bot With BotFather]()
+the BotFather, you can follow this Wiki to do so [How to Create A Telegram Bot With BotFather](https://hossam-elshabory.github.io/InJobBot/0.1/01_Tutorial%20-%20User%20Guide/01_creating_bot_token/)
 
 <br>
 
@@ -103,7 +103,7 @@ python bot.py
  <img width=500px height=500px src="src\images\help_command_owner.gif" alt="help command"></a>
 </p>
 
-> 🛑View the [documentations](https://hossam-elshabory.github.io/InJobBot/) for more details about the bot's commands and how to add your own.
+> 🛑View the [documentations](https://hossam-elshabory.github.io/InJobBot/0.1/) for more details about the bot's commands and how to add your own.
 ***
 
 ## 🚀 Deploying your own bot <a name = "deployment"></a>
