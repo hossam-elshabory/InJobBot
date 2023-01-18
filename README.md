@@ -103,7 +103,7 @@ python bot.py
  <img width=500px height=500px src="src\images\help_command_owner.gif" alt="help command"></a>
 </p>
 
-> 🛑View the [documentations](https://hossam-elshabory.github.io/InJobBot/0.1/) for more details about the bot's commands and how to add your own.
+> 🛑View the [documentations](https://hossam-elshabory.github.io/InJobBot/0.1/) for more details about the bot's commands.
 ***
 
 ## 🚀 Deploying your own bot <a name = "deployment"></a>
