@@ -21,7 +21,7 @@
 
 ---
 
-# [📄 Official Documentation]() <!-- omit from toc -->
+# [📄 Official Documentation](https://hossam-elshabory.github.io/InJobBot/) <!-- omit from toc -->
 
 <p align="center"> 🤖 Weekly Posted LinkedIn Jobs In Your Telegram. 🤖
     <br> 
