@@ -72,7 +72,7 @@ the BotFather, you can follow this Wiki to do so [How to Create A Telegram Bot W
 
 Create a *.env* file and put the `BOT_TOKEN` you got from the BotFather, and the `CHANNEL_ID` to the channel the bot will post it (channel must be public and **<ins>bot must be an admin</ins>**), and the `OWNER` *(The Owner's Username)*, as the blow image demonstrate.
 
-![env example](src\images\env_file_example.png)
+![env_example](https://github.com/hossam-elshabory/InJobBot/blob/main/src/images/env_file_example.png) 
 
 <br>
 
