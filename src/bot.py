@@ -9,6 +9,9 @@ from telebot import TeleBot, custom_filters, util
 # Importing the channel updater function, to update channel content.
 from job_posts import channel_jobs_updater
 
+# Importing partial from functools
+from functools import partial
+
 # Importing the database cleaning function.
 from database import database_cleaner
 
@@ -163,8 +166,8 @@ def schedule() -> None:
     # Setting the channel_updater scheduler
     ## Every 7 days at 7:00 PM.
     channel_schedule = Scheduler(days_skipped=7, hour="19:00")
-    # Setting the callable function to the channel updater.
-    channel_schedule.set_schedule(channel_jobs_updater)
+    ## Using 'partial' to pass the function with arguments without calling it.
+    channel_schedule.set_schedule(partial(channel_jobs_updater, bot))
 
     # Setting the database_cleaner scheduler
     ## Every 60 minutes (an hour).
