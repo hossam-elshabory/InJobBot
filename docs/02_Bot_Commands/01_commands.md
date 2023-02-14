@@ -16,8 +16,6 @@ InJobBot main functionality is to scrape jobs from [LinkedIn](https://www.linked
 
 InJobBot also comes with a set of helper commands like `/help` to display the help message for group members, `/tips` to display tips about setting your LinkedIn and GitHub profiles. More commands will be added in the future.
 
-If you want to add your own command, follow this tutorial [Adding command to bot.]()
-
 !!! Note
     The response to the `/help` command will differ depending on if the user is the **owner** of the bot, a **group admin** or a **group member**.
 
