@@ -6,8 +6,8 @@
 <h3 align="center">InJobBot</h3>
 <div align="center">
 
-  ![Status - Active](https://img.shields.io/badge/Status-Active-2ea44f?logo=Cachet&logoColor=green)
-  ![Maintained - Yes](https://img.shields.io/badge/Maintained-Yes-2ea44f)
+  ![Status - InActive](https://img.shields.io/badge/Status-Active-2ea44f?logo=Cachet&logoColor=green)
+  ![Maintained - No](https://img.shields.io/badge/Maintained-Yes-2ea44f)
   ![Python - >=3.11](https://img.shields.io/badge/Python->=3.11-blue?logo=Python)
   ![LICENSE - MIT](https://img.shields.io/badge/LICENSE-MIT-yellow)
 
